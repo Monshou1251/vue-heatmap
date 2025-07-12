@@ -28,10 +28,10 @@ import "vue-heatmap-table/dist/vue-heatmap-table.css";
 import HeatmapTable from "vue-heatmap-table";
 
 const sampleData = {
-  "2025-01-01": 0.3,
-  "2025-02-14": 0.6,
-  "2025-05-01": 1.0,
-  "2025-12-31": 0.8,
+  "2025-01-01": 1,
+  "2025-02-03": 3,
+  "2025-04-15": 6,
+  "2025-12-31": 2,
 };
 </script>
 ```
@@ -40,19 +40,19 @@ const sampleData = {
 
 ## 🧩 Props
 
-| Name              | Type                     | Description                                                                 | Default              |
-| ----------------- | ------------------------ | --------------------------------------------------------------------------- | -------------------- |
-| `year`            | `number`                 | Year to display                                                             | current year         |
-| `data`            | `Record<string, number>` | Object with activity values for each day (`YYYY-MM-DD` format, values 1–10) | `{}`                 |
-| `cellSize`        | `string`                 | Size of each cell (`px`, `rem`, etc.)                                       | `'14px'`             |
-| `cellRadius`      | `string`                 | Border-radius of each cell                                                  | `'3px'`              |
-| `cellGap`         | `string`                 | Gap between cells (e.g. `'2px'` or `'20%'`)                                 | `'20%'`              |
-| `emptyColor`      | `string`                 | Background color for days with zero activity                                | `'#151b23'`          |
-| `colorPalette`    | `string[]`               | Array of colors from low to high activity                                   | GitHub green palette |
-| `visibleWeekDays` | `number[]`               | Indexes of visible weekdays (0 = Sun, 1 = Mon, ..., 6 = Sat)                | `[1, 3, 5]`          |
-| `fontSize`        | `string`                 | Font size for labels                                                        | `'14px'`             |
-| `fontColor`       | `string`                 | Font color                                                                  | `'#666'`             |
-| `locale`          | `string`                 | Locale for weekday/month labels (e.g. `'en'`, `'ru'`, `'fr'`)               | `'en'`               |
+| Name              | Type                     | Description                                                                                                                                                                         | Default              |
+| ----------------- | ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
+| `year`            | `number`                 | Year to display                                                                                                                                                                     | current year         |
+| `data`            | `Record<string, number>` | Object with activity values for each day (`YYYY-MM-DD` format). Values can be any non-negative numbers — color intensity will be mapped proportionally based on the provided range. | `{}`                 |
+| `cellSize`        | `string`                 | Size of each cell (`px`, `rem`, etc.)                                                                                                                                               | `'14px'`             |
+| `cellRadius`      | `string`                 | Border-radius of each cell                                                                                                                                                          | `'3px'`              |
+| `cellGap`         | `string`                 | Gap between cells (e.g. `'2px'` or `'20%'`)                                                                                                                                         | `'20%'`              |
+| `emptyColor`      | `string`                 | Background color for days with zero activity                                                                                                                                        | `'#151b23'`          |
+| `colorPalette`    | `string[]`               | Array of colors from low to high activity                                                                                                                                           | GitHub green palette |
+| `visibleWeekDays` | `number[]`               | Indexes of visible weekdays (0 = Sun, 1 = Mon, ..., 6 = Sat)                                                                                                                        | `[1, 3, 5]`          |
+| `fontSize`        | `string`                 | Font size for labels                                                                                                                                                                | `'14px'`             |
+| `fontColor`       | `string`                 | Font color                                                                                                                                                                          | `'#666'`             |
+| `locale`          | `string`                 | Locale for weekday/month labels (e.g. `'en'`, `'ru'`, `'fr'`)                                                                                                                       | `'en'`               |
 
 ---
 
