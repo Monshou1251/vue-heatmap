@@ -40,19 +40,19 @@ const sampleData = {
 
 ## 🧩 Props
 
-| Name              | Type                     | Description                                                                | Default              |
-| ----------------- | ------------------------ | -------------------------------------------------------------------------- | -------------------- |
-| `year`            | `number`                 | Year to display                                                            | current year         |
-| `data`            | `Record<string, number>` | Object with activity values for each day (`YYYY-MM-DD` format, values 0–1) | `{}`                 |
-| `cellSize`        | `string`                 | Size of each cell (`px`, `rem`, etc.)                                      | `'14px'`             |
-| `cellRadius`      | `string`                 | Border-radius of each cell                                                 | `'3px'`              |
-| `cellGap`         | `string`                 | Gap between cells (e.g. `'2px'` or `'20%'`)                                | `'20%'`              |
-| `emptyColor`      | `string`                 | Background color for days with zero activity                               | `'#151b23'`          |
-| `colorPalette`    | `string[]`               | Array of colors from low to high activity                                  | GitHub green palette |
-| `visibleWeekDays` | `number[]`               | Indexes of visible weekdays (0 = Sun, 1 = Mon, ..., 6 = Sat)               | `[1, 3, 5]`          |
-| `fontSize`        | `string`                 | Font size for labels                                                       | `'14px'`             |
-| `fontColor`       | `string`                 | Font color                                                                 | `'#666'`             |
-| `locale`          | `string`                 | Locale for weekday/month labels (e.g. `'en'`, `'ru'`, `'fr'`)              | `'en'`               |
+| Name              | Type                     | Description                                                                 | Default              |
+| ----------------- | ------------------------ | --------------------------------------------------------------------------- | -------------------- |
+| `year`            | `number`                 | Year to display                                                             | current year         |
+| `data`            | `Record<string, number>` | Object with activity values for each day (`YYYY-MM-DD` format, values 1–10) | `{}`                 |
+| `cellSize`        | `string`                 | Size of each cell (`px`, `rem`, etc.)                                       | `'14px'`             |
+| `cellRadius`      | `string`                 | Border-radius of each cell                                                  | `'3px'`              |
+| `cellGap`         | `string`                 | Gap between cells (e.g. `'2px'` or `'20%'`)                                 | `'20%'`              |
+| `emptyColor`      | `string`                 | Background color for days with zero activity                                | `'#151b23'`          |
+| `colorPalette`    | `string[]`               | Array of colors from low to high activity                                   | GitHub green palette |
+| `visibleWeekDays` | `number[]`               | Indexes of visible weekdays (0 = Sun, 1 = Mon, ..., 6 = Sat)                | `[1, 3, 5]`          |
+| `fontSize`        | `string`                 | Font size for labels                                                        | `'14px'`             |
+| `fontColor`       | `string`                 | Font color                                                                  | `'#666'`             |
+| `locale`          | `string`                 | Locale for weekday/month labels (e.g. `'en'`, `'ru'`, `'fr'`)               | `'en'`               |
 
 ---
 
