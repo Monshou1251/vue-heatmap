@@ -25,5 +25,13 @@
     "calendar"
   ],
   "author": "Твоё имя",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Monshou1251/vue-heatmap.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Monshou1251/vue-heatmap/issues"
+  },
+  "homepage": "https://github.com/Monshou1251/vue-heatmap#readme"
 }
