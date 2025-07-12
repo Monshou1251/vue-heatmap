@@ -2,6 +2,10 @@
 
 A flexible heatmap component for visualizing day-by-day activity across a year — like GitHub contribution graphs.
 
+## Preview
+
+![Heatmap Preview](./src/assets/preview.png)
+
 ## 🚀 Installation
 
 ```bash
@@ -76,10 +80,10 @@ import HeatmapTable from "vue-heatmap-table";
 import "vue-heatmap-table/dist/vue-heatmap-table.css";
 
 const data = {
-  "2025-01-01": 0.2,
-  "2025-02-03": 0.6,
-  "2025-04-15": 0.9,
-  "2025-12-31": 1.0,
+  "2025-01-01": 1,
+  "2025-02-03": 3,
+  "2025-04-15": 6,
+  "2025-12-31": 2,
 };
 </script>
 ```
