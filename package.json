@@ -11,7 +11,8 @@
   "exports": {
     ".": {
       "import": "./dist/heatmap-table.es.js",
-      "require": "./dist/heatmap-table.umd.js"
+      "require": "./dist/heatmap-table.umd.js",
+      "types": "./dist/vue-heatmap-table.d.ts"
     },
     "./dist/vue-heatmap-table.css": "./dist/vue-heatmap-table.css"
   },
