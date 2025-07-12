@@ -12,7 +12,8 @@
     ".": {
       "import": "./dist/heatmap-table.es.js",
       "require": "./dist/heatmap-table.umd.js"
-    }
+    },
+    "./dist/vue-heatmap-table.css": "./dist/vue-heatmap-table.css"
   },
   "scripts": {
     "build": "vite build && copy src\\vue-heatmap-table.d.ts dist\\"
