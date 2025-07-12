@@ -1,6 +1,6 @@
 {
   "name": "vue-heatmap-table",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "./dist/heatmap-table.umd.js",
   "module": "./dist/heatmap-table.es.js",
   "types": "./dist/vue-heatmap-table.d.ts",
